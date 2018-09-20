@@ -2,6 +2,7 @@
   "name": "githubpages",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dou.gs",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "react": "^16.5.2",
