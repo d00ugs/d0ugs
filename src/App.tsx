@@ -4,8 +4,9 @@ import Dougs from './dougs';
 
 class App extends React.Component {
   public render() {
-    return (
-        <Dougs/>
+    return (<div>
+        <title>dou.gs</title>
+        <Dougs/></div>
     );
   }
 }
