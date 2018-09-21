@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
 import { createRef } from 'office-ui-fabric-react/lib/Utilities';
 import { getTheme, FontWeights, mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 import { Image } from 'office-ui-fabric-react/lib/Image';
@@ -72,15 +71,8 @@ export default class Dougs extends React.Component<{}, ICalloutBasicState> {
             text='dou.gs'
           />
         </div>
-        <Callout
+        <div
           className={styles.callout}
-          ariaLabelledBy={'callout-label-1'}
-          ariaDescribedBy={'callout-description-1'}
-          role={'alertdialog'}
-          gapSpace={0}
-          target={this.menuButtonElement.value}
-          onDismiss={this.onCalloutDismiss}
-          setInitialFocus={true}
           hidden={!this.state.isCalloutVisible}
         >
           <div className={styles.header}>
@@ -103,7 +95,7 @@ export default class Dougs extends React.Component<{}, ICalloutBasicState> {
             />
             </div>
           </div>
-        </Callout>
+        </div>
       </div>
     );
   }
@@ -120,9 +112,5 @@ export default class Dougs extends React.Component<{}, ICalloutBasicState> {
     });
   };
 
-  private onCalloutDismiss = (): void => {
-    this.setState({
-      isCalloutVisible: false
-    });
-  };
 }
+
