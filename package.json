@@ -4,22 +4,26 @@
   "private": true,
   "homepage": "https://dou.gs",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "gh-pages": "^2.0.0",
+    "office-ui-fabric-react": "^6.72.0",
     "react": "^16.5.2",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.4",
-    "reactstrap": "^6.4.0"
+    "react-scripts-ts": "2.17.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.0"
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.10.1",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "typescript": "^3.0.3"
   }
 }
