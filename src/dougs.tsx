@@ -81,7 +81,7 @@ export default class Dougs extends React.Component<{}, ICalloutBasicState> {
                 <DefaultButton 
                     id="whiterabbit"
                     onClick={this.showMeTheRabbit}
-                    text='Follow the WhiteRabbit ...'
+                    text='Follow the WhiteRabbit  🐇 ...'
                 />
             </div>
         </div>
