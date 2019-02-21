@@ -76,6 +76,7 @@ export default class Dougs extends React.Component<{}, ICalloutBasicState> {
                 <p>
                     {dougsAbout}
                 </p>
+                <p>All of this brought to you by the KingOfFife</p>
             </div>
             <div className="actions">
                 <DefaultButton 
