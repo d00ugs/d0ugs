@@ -20,5 +20,11 @@ jobs:
       - checkout
 
       - run: npm install
+      
+      - run: git config --global user.email $username
+      
+      - run: git config --global user.name "dougs"
+      
+      - run: git config --global user.password $userpwd
 
       - run: npm run-script deploy
